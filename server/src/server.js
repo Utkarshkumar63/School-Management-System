@@ -19,7 +19,8 @@ const startServer = async () => {
 
   // Connect to database in a non-blocking resilient loop
   connectDB()
-    .then(async () => {
+    .then(async (conn) => {
+      if (!conn) return; // Connection failed/retrying, skip count check
       // Auto-seed if database is empty (e.g. initial cloud Atlas deployment)
       try {
         const userCount = await User.countDocuments();

@@ -77,6 +77,7 @@ export const connectDB = async (customUri = null) => {
     retryTimer = setTimeout(() => {
       connectDB(uri);
     }, 8000);
+    return null;
   }
 };
 
