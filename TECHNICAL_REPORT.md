@@ -2,7 +2,7 @@
 ## School Management System (Algions AI Labs Assessment)
 **Author**: Full-Stack Engineering Candidate  
 **Date**: November 2026  
-**Live Production URL**: [https://school-management-system-1-24yo.onrender.com/login](https://school-management-system-1-24yo.onrender.com/login)  
+**Live Production URL**: [https://school-management-system-1-24yo.onrender.com](https://school-management-system-1-24yo.onrender.com)  
 **Live Swagger API Docs**: [https://school-management-system-1-24yo.onrender.com/api/docs](https://school-management-system-1-24yo.onrender.com/api/docs)  
 **Stack**: Node.js, Express.js (ES Modules), MongoDB, Mongoose, React 18, Vite, Zod, Jest, Supertest  
 

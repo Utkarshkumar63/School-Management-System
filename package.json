@@ -2,6 +2,7 @@
   "name": "school-management-system",
   "version": "1.0.0",
   "description": "Production-quality School Management System for Algions AI Labs Internship Assessment",
+  "homepage": "https://school-management-system-1-24yo.onrender.com",
   "scripts": {
     "start": "cd server && npm start",
     "dev:server": "cd server && npm run dev",

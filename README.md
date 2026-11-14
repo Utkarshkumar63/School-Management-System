@@ -2,7 +2,7 @@
 
 > A production-quality, modular full-stack **School Management System** engineered for the Algions AI Labs internship assessment. Built with a modular monolith backend architecture, strict server-side Role-Based Access Control (RBAC), an idempotent financial fee ledger, automated grading rules engine, audit logging, and a glassmorphic user interface.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-brightgreen?style=for-the-badge&logo=render)](https://school-management-system-1-24yo.onrender.com/login)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-brightgreen?style=for-the-badge&logo=render)](https://school-management-system-1-24yo.onrender.com)
 [![Swagger API Docs](https://img.shields.io/badge/API%20Docs-Swagger-blue?style=for-the-badge&logo=swagger)](https://school-management-system-1-24yo.onrender.com/api/docs)
 [![Tests Passing](https://img.shields.io/badge/Tests-19%2F19%20Passing-success?style=for-the-badge)](https://github.com/Utkarshkumar63/School-Management-System)
 
@@ -12,7 +12,7 @@
 
 | Service | Live Link | Status |
 | :--- | :--- | :--- |
-| **Live Web Application (Portal)** | 🚀 **[https://school-management-system-1-24yo.onrender.com/login](https://school-management-system-1-24yo.onrender.com/login)** | **Online (Production)** |
+| **Live Web Application (Portal)** | 🚀 **[https://school-management-system-1-24yo.onrender.com](https://school-management-system-1-24yo.onrender.com)** | **Online (Production)** |
 | **Interactive Swagger API Docs** | 📖 **[https://school-management-system-1-24yo.onrender.com/api/docs](https://school-management-system-1-24yo.onrender.com/api/docs)** | **Active** |
 | **Server Health Endpoint** | 🟢 **[https://school-management-system-1-24yo.onrender.com/health](https://school-management-system-1-24yo.onrender.com/health)** | **Healthy** |
 
