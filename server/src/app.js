@@ -3,6 +3,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
 import mongoSanitize from 'express-mongo-sanitize';
+import mongoose from 'mongoose';
 import swaggerUi from 'swagger-ui-express';
 import { swaggerSpec } from './config/swagger.js';
 import { ENV } from './config/env.js';
@@ -59,15 +60,21 @@ if (process.env.NODE_ENV !== 'test') {
 
 // Health Check
 app.get('/health', (req, res) => {
+  const isDbConnected = mongoose.connection.readyState === 1;
   res.status(200).json({
-    status: 'ok',
+    status: isDbConnected ? 'ok' : 'degraded',
+    database: isDbConnected ? 'connected' : 'connecting_or_disconnected',
+    databaseState: mongoose.connection.readyState,
     uptime: process.uptime(),
     timestamp: new Date().toISOString(),
   });
 });
 app.get('/api/health', (req, res) => {
+  const isDbConnected = mongoose.connection.readyState === 1;
   res.status(200).json({
-    status: 'ok',
+    status: isDbConnected ? 'ok' : 'degraded',
+    database: isDbConnected ? 'connected' : 'connecting_or_disconnected',
+    databaseState: mongoose.connection.readyState,
     uptime: process.uptime(),
     timestamp: new Date().toISOString(),
   });
