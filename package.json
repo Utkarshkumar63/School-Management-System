@@ -9,7 +9,9 @@
     "seed": "cd server && npm run seed",
     "test": "cd server && npm test",
     "test:coverage": "cd server && npm run test:coverage",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm install && npm run build",
+    "build:server": "cd server && npm install",
+    "build:all": "cd server && npm install && cd ../client && npm install && npm run build"
   },
   "keywords": [
     "school-management",
