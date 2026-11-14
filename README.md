@@ -2,6 +2,28 @@
 
 > A production-quality, modular full-stack **School Management System** engineered for the Algions AI Labs internship assessment. Built with a modular monolith backend architecture, strict server-side Role-Based Access Control (RBAC), an idempotent financial fee ledger, automated grading rules engine, audit logging, and a glassmorphic user interface.
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-brightgreen?style=for-the-badge&logo=render)](https://school-management-system-1-24yo.onrender.com/login)
+[![Swagger API Docs](https://img.shields.io/badge/API%20Docs-Swagger-blue?style=for-the-badge&logo=swagger)](https://school-management-system-1-24yo.onrender.com/api/docs)
+[![Tests Passing](https://img.shields.io/badge/Tests-19%2F19%20Passing-success?style=for-the-badge)](https://github.com/Utkarshkumar63/School-Management-System)
+
+---
+
+## 🌐 Live Deployment & Interactive Access
+
+| Service | Live Link | Status |
+| :--- | :--- | :--- |
+| **Live Web Application (Portal)** | 🚀 **[https://school-management-system-1-24yo.onrender.com/login](https://school-management-system-1-24yo.onrender.com/login)** | **Online (Production)** |
+| **Interactive Swagger API Docs** | 📖 **[https://school-management-system-1-24yo.onrender.com/api/docs](https://school-management-system-1-24yo.onrender.com/api/docs)** | **Active** |
+| **Server Health Endpoint** | 🟢 **[https://school-management-system-1-24yo.onrender.com/health](https://school-management-system-1-24yo.onrender.com/health)** | **Healthy** |
+
+### 🔑 Demo Portal Credentials
+
+| Role | Email Address | Password | Permissions & Scope |
+| :--- | :--- | :--- | :--- |
+| **Administrator** | `admin@school.test` | `Admin@123` | Institutional dashboard, academic setup, student/teacher roster, fee ledger, grading rules, audit logs |
+| **Teacher** | `teacher@school.test` | `Teacher@123` | Assigned classes only (Grade 10-A Maths/Science), daily attendance recording, exam marks entry |
+| **Parent / Guardian** | `guardian@school.test` | `Guardian@123` | Restricted strictly to linked children (Julian & Beatrice Vance), attendance record %, report card, online fee payment |
+
 ---
 
 ## 🌟 Key Highlights & Architecture
@@ -178,7 +200,8 @@ npm test
 ## 📖 API Documentation & Endpoints
 
 Swagger / OpenAPI documentation is hosted interactively at:
-👉 **`http://localhost:5001/api/docs`**
+- **Production Live**: 👉 **[https://school-management-system-1-24yo.onrender.com/api/docs](https://school-management-system-1-24yo.onrender.com/api/docs)**
+- **Local Dev**: 👉 `http://localhost:5001/api/docs`
 
 ### Summary of REST API Routes (`/api/v1`)
 - **Authentication**: `POST /auth/login`, `GET /auth/me`
