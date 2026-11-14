@@ -83,6 +83,19 @@ app.get('/api/health', (req, res) => {
 // Swagger API Documentation
 app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, { explorer: true }));
 
+// Database Connectivity Guard for /api/v1 (Fast-fail instead of 10s Mongoose buffering timeout)
+app.use('/api/v1', (req, res, next) => {
+  if (process.env.NODE_ENV !== 'test' && mongoose.connection.readyState !== 1) {
+    return res.status(503).json({
+      success: false,
+      message:
+        'Database connection is not ready. Please verify your MongoDB Atlas cluster is active, unpaused, and MONGODB_URI is correctly configured.',
+      databaseState: mongoose.connection.readyState,
+    });
+  }
+  next();
+});
+
 // API Version 1
 app.use('/api/v1', apiRoutes);
 

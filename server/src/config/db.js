@@ -7,6 +7,9 @@ if (typeof dns.setDefaultResultOrder === 'function') {
   dns.setDefaultResultOrder('ipv4first');
 }
 
+// Fail fast on buffering if database is not connected
+mongoose.set('bufferTimeoutMS', 3000);
+
 let isConnecting = false;
 let retryTimer = null;
 

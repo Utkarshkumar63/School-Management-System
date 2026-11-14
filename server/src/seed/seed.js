@@ -28,8 +28,10 @@ dotenv.config();
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/school_management_db';
 
 export async function runSeed() {
-  console.log(`[Seed] Connecting to MongoDB: ${MONGODB_URI}...`);
-  await mongoose.connect(MONGODB_URI);
+  if (mongoose.connection.readyState !== 1) {
+    console.log(`[Seed] Connecting to MongoDB: ${MONGODB_URI}...`);
+    await mongoose.connect(MONGODB_URI);
+  }
   console.log('[Seed] Connected. Clearing existing collections...');
 
   await Promise.all([
