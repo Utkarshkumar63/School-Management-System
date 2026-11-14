@@ -1,0 +1,28 @@
+{
+  "name": "school-management-system",
+  "version": "1.0.0",
+  "description": "Production-quality School Management System for Algions AI Labs Internship Assessment",
+  "scripts": {
+    "start": "cd server && npm start",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "test": "cd server && npm test",
+    "test:coverage": "cd server && npm run test:coverage",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "school-management",
+    "express",
+    "mongodb",
+    "react",
+    "vite",
+    "jwt",
+    "rbac",
+    "ledger",
+    "assessment"
+  ],
+  "author": "Anshika Kumari",
+  "license": "ISC"
+}
+
